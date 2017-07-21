@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/mainmaster.master" AutoEventWireup="true" CodeFile="mainmaster2.master.cs" Inherits="mainmaster2" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <div>
+            <div id="left">
+                <div class="wrapper2">
+                    <div class="extra-indent">
+                        <div class="module-categories">
+                            <h3>
+                                <span><span>Markalarımız</span></span></h3>
+                            <div class="boxIndent">
+                                <div id="relative_div" style="position: relative; z-index: 0">
+                                </div>
+                                <ul class="level1">
+                                    <asp:Repeater ID="rptMarka" runat="server">
+                                        <ItemTemplate>
+
+                                            <li class="level1 item1"><a class="level1 item1" href="urun.aspx?kategoriid=<%#Eval("ID") %>"
+                                                title='<%#Eval("Kategori")%>'><span>
+                                                    <%#Eval("Kategori")%></span> </a></li>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div style="float:left; width:700px; margin-top:-35px;">
+                
+                 <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+            </div>
+            </div>
+</asp:Content>
+

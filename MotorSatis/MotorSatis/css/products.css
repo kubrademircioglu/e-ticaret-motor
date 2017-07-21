@@ -1,0 +1,157 @@
+.anythingSlider2 .wrapper ul             {margin:0 0px 0 0; }
+.anythingSlider2 ul li                   { display: block; padding: 0; margin: 0; margin-bottom:9px; overflow:hidden;float:left;}
+.module_new { position:relative; overflow:hidden; margin-bottom:-9px;}
+
+.module_new h3 {
+	letter-spacing:0;
+	background:none; 
+	font:normal 23px/1.2em Arial, Helvetica, sans-serif; 
+	font-family: 'Quattrocento Sans', sans-serif;
+	color:#4d7dc4;
+	margin:0; 
+	padding:10px 0 10px 0;
+	text-transform:uppercase; 
+	position:relative;
+	z-index:99; 
+}
+.module_new h3 em { color:#3e3e3e; font-style:normal;}
+
+.ProductBox{
+	width:220px; 
+	min-height:120px;
+	float: left;
+	margin-right:5px;
+	padding:19px;
+	padding-bottom:11px;
+	background:#f5f5f5;
+	position:relative;
+	border-radius: 4px;
+	 -moz-border-radius: 4px;
+	 -webkit-border-radius: 4px;
+	 overflow:hidden;
+}
+
+ .ProductBox.last {
+	margin-right:0px !important;
+}	
+.lastProductImage{
+
+	background:none;
+	border:none;
+	padding:0;
+	cursor:pointer;
+	text-align:center;
+}
+.lastProductImage a{
+	display:block;
+	overflow:hidden;
+}
+.lastProductImage img { width:192px; height:206px; background:#fff;}
+
+
+.lastProductName{
+	text-align:left;
+	padding:11px 0 5px 5px;
+	margin:0;
+	min-height:27px;
+	border-bottom:1px dotted #d3d3d3;
+}
+.lastProductName a { color:#3b3b3b; font:normal 13px/15px Amaranth, Helvetica, sans-serif;text-decoration:none; display:inline-block;}
+.lastProductName a:hover { text-decoration:none;color:#d72731;}
+.lastProductDesc{
+	height:60px;
+}
+
+.ProductBox .productPrice { color:#d72731; font:normal 20px/25px Arial, Helvetica, sans-serif; font-family: 'Amaranth', sans-serif; float:left; width:111px; padding:4px 0 0 4px;}
+
+
+
+.productDetail { float:left; padding:5px 0 0 0px; margin-left:2px; width:53px; height:23px;}
+.productDetail a {
+		background:url(../img/det-button.png) left top no-repeat;
+		border:none !important;
+		color:#fefefe;
+		display:inline-block;
+		font:normal 11px/23px Arial, Helvetica, sans-serif;
+		letter-spacing:0px;
+		text-decoration:none;
+		text-transform:lowercase;
+		padding:0px 0 0px 0;
+		margin:0;
+		text-align:center;
+		width:53px !important;
+		height:23px!important;
+	
+	}
+.productDetail a:hover { background:url(../img/det-button.png) left bottom no-repeat; text-decoration:none;}	
+	
+	
+.lastProductDetail{
+	text-align:left;
+	padding:3px 0 0 0px;
+	width:73px;
+	height:20px;
+}
+.lastProductDetail .add_to_cart_button {
+	border:none;
+	background:none;
+	height:20px;
+	width:63px;
+	display:block;
+	float:none;
+	text-transform:uppercase;
+	color:#272727;
+	font:normal 11px/20px Arial, Helvetica, sans-serif;
+	padding:0 0 2px 0;
+	cursor:pointer;
+	text-decoration:none;
+	
+	}
+.lastProductDetail .add_to_cart_button:hover {background:none; border:none; color:#d72731; text-decoration:none;}
+
+.lastProductDetail a,.lastProductDetail a:visited{
+	display:block;
+	margin:0 auto;
+	width:120px;
+	height:23px;
+	background-image:url(../images/product_details.jpg);
+	background-repeat:no-repeat;
+	
+}
+.lastProductDetail a:hover{
+	background-image:url(../images/product_details_hover.jpg);
+}
+.imghover{
+	border:1px solid #661150;
+	background-color:#fff;
+}
+a.lastProductCategory,a.lastProductCategory:visited{
+	color:#a50079 !important;
+	text-transform:uppercase;
+}
+a.lastProductCategory:hover{
+	color:#5e9e4a !important;
+}
+#start-stop{display:none;}
+
+/* ---Top */
+	.module-bestsellers
+	{
+		margin:0px 0px 20px 10px;
+		padding:0px 0 0 0px;
+		background:none;
+		position:relative;
+	}
+	.module-bestsellers tr { border:none; padding:0;}
+	.module-bestsellers tr td { padding:0!important;}
+	.module-bestsellers h3 { color:#242424; letter-spacing:0; font-size:13px; line-height:20px;  font-family: Arial, Helvetica, sans-serif; font-weight:bold; margin:0; padding:0px 0 0 0px; text-transform:uppercase; text-shadow:0 0 1px rgba(0, 0, 0, .1); }
+	
+	.module-bestsellers .boxIndent
+	{
+		padding:8px 17px 20px 1px;
+	}
+
+	.module-bestsellers a { color:#787878; font:normal 11px/21px Arial, Helvetica, sans-serif; display:inline-block; background:url(../images/catagories-bg-a.gif) left 9px no-repeat; padding-left:16px;
+	}
+.ay{ position:absolute;width:60px;height:60px;left:143px}
+.yeni{ position:absolute;width:70px;height:20px;top:204px;}

@@ -1,0 +1,150 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="mainmaster.master.cs" Inherits="mainmaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Toklu Motor Satış Sitesi</title>
+    <meta name="robots" content="index,follow" />
+    <meta name="revisit-after" content="1 days" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="expites" content="0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <link rel="shortcut icon" href="img/ıcon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/constant.css" type="text/css" />
+    <link rel="stylesheet" href="css/skin.css" type="text/css" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/default.css" type="text/css" />
+    <link rel="stylesheet" href="css/template.css" type="text/css" />
+    <link rel="stylesheet" href="css/virtuemart.css" type="text/css" />
+    <link rel="stylesheet" href="css/products.css" type="text/css" />
+    <link rel="stylesheet" href="css/ieonly.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Amaranth:400,400italic,700' rel='stylesheet'
+        type='text/css'>
+    <script type="text/javascript" src="js/jquery.tools.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#accordion").tabs(
+            "#accordion div.pane",
+        { tabs: 'h2', effect: 'slide', initialIndex: null }
+            );
+        });
+    </script>
+    <script type="text/javascript" src="js/jquery.lazyload.js"></script>
+    <script type="text/javascript" src="js/urchin.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(function () {
+            $(".lazy").lazyload({
+                effect: "fadeIn"
+            });
+        });
+  </script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#slider').nivoSlider();
+        });
+        jQuery(document).ready(function () {
+            jQuery('#mycarousel').jcarousel();
+        });
+    </script>
+    <script type="text/javascript" language="javascript">
+        function sedeceSayi(evt) {
+            evt = (evt) ? evt : window.event
+            var charCode = (evt.which) ? evt.which : evt.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                return false
+            }
+            return true
+        }
+    </script>
+</head>
+<body runat="server" id="popup">
+    <form id="form2" runat="server">
+    <div class="all">
+        <div class="main">
+            <!-- header -->
+            <div id="header">
+                <div id="search">
+                    <div class="moduletable">
+                        <div class="search">
+                            <asp:TextBox ID="txtArananan" runat="server" class="inputbox" Text="ara..." onblur="if(this.value=='') this.value='ara...';"
+                                onfocus="if(this.value=='ara...') this.value='';" />
+                            <asp:Button ID="btnAra" runat="server" CssClass="button" 
+                                onclick="btnAra_Click" />
+                        </div>
+                    </div>
+                </div>
+                <div id="topmenu">
+                    <div class="moduletable-nav">
+                        <ul class="menu">
+                            <li class="item29"><a href="Default.aspx"><span>Anasayfa</span> </a></li>
+                            <li class="item18"><a href="hakkimizda.aspx"><span>Hakkımızda</span> </a></li>
+                            <asp:Repeater ID="rptmenu" runat="server">
+                                        <ItemTemplate>
+                                            <li class="level1 item1"><a class="level1 item1" href="urun.aspx?menuid=<%#Eval("id") %>"
+                                                title='<%#Eval("menu")%>'><span>
+                                                    <%#Eval("menu")%></span> </a></li>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                            <li class="item53"><a href="iletisim.aspx"><span>İletişim</span> </a></li>
+                            <li class="item54"><a href="ara.aspx"><span>Gelişmiş Ara</span> </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="cart">
+                <asp:Panel runat="server" ID="pnlUser"> Hosgeldiniz&nbsp;
+                    <asp:Label ID="adsoyad" runat="server" Text=""></asp:Label>
+                    &nbsp;
+                    <asp:LinkButton ID="btngiris" runat="server" onclick="btngiris_Click">Giriş</asp:LinkButton>
+                    <asp:LinkButton ID="btncikis" runat="server" onclick="btncikis_Click">Çıkış</asp:LinkButton>
+                </asp:Panel>
+                    <div class="moduletable" style="margin-top: 20px">
+                        <h3 runat="server" id="sepetdiv">
+                        </h3>
+                    </div>
+                </div>
+                  
+                <div id="logo" title="er@ygozluk.com">
+                    <a href="Default.aspx">
+                        <img src="img/özmotor.png" alt="" width="600" height="101" />
+                    </a>
+                </div>
+               
+            </div>
+            <!-- END header -->
+            <div class="clear">
+            </div>
+            
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+
+            <div class="clear">
+            </div>
+            <div class="clear">
+            </div>
+            <div id="footer">
+                <div class="space">
+                    <div class="wrapper">
+                        <div class="footerText">
+                            <div>
+                                Copyright &#169; 2016
+                                Medyan Yeşilmen Tüm hakları saklıdır.
+                            </div>
+                            <ul class="menu">
+                                <li class="item29"><a href="Default.aspx"><span>Anasayfa</span> </a></li>
+                                <li class="item18"><a href="hakkimizda.aspx"><span>Hakkımızda</span> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
